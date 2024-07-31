@@ -6,5 +6,5 @@ soup =
 Beautifulsoup (response.content, 'html parser')
 data =
 soup.get_text(seperator = '\n'
-strip = True
+strip = True)
 return data
