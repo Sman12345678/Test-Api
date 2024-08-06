@@ -7,7 +7,7 @@ app = Flask(__name__)
 def scrape():
     url = request.args.get('https://Copilot.microsoft.com')
     if not url:
-        return jsonify({'error': 'URL is required'}), 400
+        return jsonify({'error': 'url is required'}), 400
     data = scrape_website(url)
     return jsonify({'data': data})
 
