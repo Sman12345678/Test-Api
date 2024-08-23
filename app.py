@@ -1,8 +1,17 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template as suleiman
 from scraper import scrape_website  
+
+""""
+We can decide to add website at the root of the API
+"""
+
 
 app = Flask(__name__)
 
+@app.route('/')
+def suleiman_home():
+    return suleiman('home.html')
+           
 @app.route('/scrape', methods=['GET'])
 def scrape():
     url = request.args.get('url') 
