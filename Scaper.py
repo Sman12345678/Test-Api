@@ -9,4 +9,4 @@ def scrape_website(url):
         data = soup.get_text(separator='\n', strip=True)  
         return data
     except requests.exceptions.RequestException as e:
-        return f"An error occurred: {e}"  # Return error message if the request fails
+        return f"An error occurred: {e}"  # Return error message if the request fails✌️
