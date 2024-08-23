@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Usage Guide</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #262626;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        code {
+            background-color: #333333;
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: #ffffff;
+        }
+
+        .example {
+            background-color: #333333;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .example pre {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        a {
+            color: #00ccff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Using the Web Scraping API (Original Owner Suleiman. see his Facebook ✌️)</h1>
+        <a href="https://www.facebook.com/profile.php?id=61553565805276"> Click t visit him </a>
+        <p>How to use web scraping API directly through your browser.</p>
+
+        <h2>How to Use the API</h2>
+        <p>To scrape content from a website, you simply need to provide the target website's URL as a query parameter in your API endpoint. Here is the format:</p>
+        <p>
+            <code>https://sim-api-tst.onrender.com/scrape?url=</code><code>&lt;target-website-url&gt;</code>
+        </p>
+        <p>Replace <code>&lt;target-website-url&gt;</code> with the actual URL you want to scrape.</p>
+
+        <h2>Example Usage🛌</h2>
+        <div class="example">
+            <pre>https://sim-api-tst.onrender.com/scrape?url=https://google.com</pre>
+        </div>
+
+        <h2>Understanding the Response🧐</h2>
+        <p>Once you use the link, the API will return a JSON object containing the scraped content. For example:</p>
+        <div class="example">
+            <pre>{
+    "data": "Here is the scraped content from the target website."
+}</pre>
+        </div>
+
+        <h2>Handling Errors</h2>
+        <p>If there’s an issue with the request, the API will return an error message. Common issues include missing the <code>url</code> parameter or providing an invalid say bad website URL... or maybe something You made up that doesn't exist</p>
+
+        </div>
+</body>
+
+</html>
